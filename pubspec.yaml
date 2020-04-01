@@ -44,7 +44,19 @@ flutter:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
-
+  assets:
+    - assets/images/menus/ic_search_menu.png
+    - assets/images/menus/ic_account.png
+    - assets/images/menus/ic_cart.png
+    - assets/images/menus/ic_home.png
+    - assets/images/menus/ic_near_by.png
+    - assets/images/topmenu/ic_burger.png
+    - assets/images/topmenu/ic_cake.png
+    - assets/images/topmenu/ic_ice_cream.png
+    - assets/images/topmenu/ic_pasta.png
+    - assets/images/topmenu/ic_pizza.png
+    - assets/images/topmenu/ic_sushi.png
+    - assets/images/topmenu/ic_soft_drink.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -70,3 +82,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
