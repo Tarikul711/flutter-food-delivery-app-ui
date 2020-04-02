@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/BottomNavBarWidget.dart';
+import 'package:flutter_app/widgets/PopularFoodsWidget.dart';
 import 'package:flutter_app/widgets/SearchWidget.dart';
 import 'package:flutter_app/widgets/TopMenus.dart';
 
@@ -37,8 +39,11 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: TopMenus(),
           ),
+          PopularFoodsWidget(),
+          SearchWidget(),
         ],
       ),
+      bottomNavigationBar: BottomNavBarWidget(),
     );
   }
 }
