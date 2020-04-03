@@ -49,7 +49,7 @@ class PopularFoodTiles extends StatelessWidget {
         children: <Widget>[
           Container(
             padding: EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
-            decoration:  BoxDecoration(boxShadow: [
+            decoration: BoxDecoration(boxShadow: [
               /* BoxShadow(
                 color: Color(0xFFfae3e2),
                 blurRadius: 15.0,
@@ -100,12 +100,14 @@ class PopularFoodTiles extends StatelessWidget {
                           ),
                           Align(
                             alignment: Alignment.centerLeft,
-                            child:Center(
+                            child: Center(
                                 child: Image.asset(
-                                  'assets/images/popular_foods/' + imageUrl + ".png",
-                                  width: 130,
-                                  height: 140,
-                                )) ,
+                              'assets/images/popular_foods/' +
+                                  imageUrl +
+                                  ".png",
+                              width: 130,
+                              height: 140,
+                            )),
                           )
                         ],
                       ),
@@ -264,7 +266,6 @@ class PopularFoodItems extends StatelessWidget {
             numberOfRating: '200',
             price: '15.06',
             slug: "fried_egg"),
-
         PopularFoodTiles(
             name: "Mixed vegetable",
             imageUrl: "ic_popular_food_3",

@@ -23,6 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  carousel_pro: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +64,16 @@ flutter:
     - assets/images/popular_foods/ic_popular_food_4.png
     - assets/images/popular_foods/ic_popular_food_5.png
     - assets/images/popular_foods/ic_popular_food_6.png
+    - assets/images/bestfood/ic_best_food_1.jpeg
+    - assets/images/bestfood/ic_best_food_2.jpeg
+    - assets/images/bestfood/ic_best_food_3.jpeg
+    - assets/images/bestfood/ic_best_food_4.jpeg
+    - assets/images/bestfood/ic_best_food_5.jpeg
+    - assets/images/bestfood/ic_best_food_6.jpeg
+    - assets/images/bestfood/ic_best_food_7.jpeg
+    - assets/images/bestfood/ic_best_food_8.jpeg
+    - assets/images/bestfood/ic_best_food_9.jpeg
+    - assets/images/bestfood/ic_best_food_10.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
