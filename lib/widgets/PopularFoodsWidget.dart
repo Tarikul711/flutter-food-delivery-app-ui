@@ -9,7 +9,7 @@ class _PopularFoodsWidgetState extends State<PopularFoodsWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 265,
       width: double.infinity,
       child: Column(
         children: <Widget>[

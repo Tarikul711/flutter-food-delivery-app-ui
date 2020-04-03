@@ -33,15 +33,15 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {})
         ],
       ),
-      body: Column(
-        children: <Widget>[
-          SearchWidget(),
-          Expanded(
-            child: TopMenus(),
-          ),
-          PopularFoodsWidget(),
-          SearchWidget(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            SearchWidget(),
+            TopMenus(),
+            PopularFoodsWidget(),
+            SearchWidget(),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavBarWidget(),
     );
