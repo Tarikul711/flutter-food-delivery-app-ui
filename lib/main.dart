@@ -6,6 +6,6 @@ void main() => runApp(
   MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(fontFamily: 'Roboto',hintColor: Color(0xFFd0cece)),
-    home: FoodDetailsPage(),
+    home: HomePage(),
   )
 );

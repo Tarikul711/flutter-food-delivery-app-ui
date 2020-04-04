@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/FoodDetailsPage.dart';
 
 class PopularFoodsWidget extends StatefulWidget {
   @override
@@ -44,7 +45,12 @@ class PopularFoodTiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => FoodDetailsPage()),
+        );
+      },
       child: Column(
         children: <Widget>[
           Container(
