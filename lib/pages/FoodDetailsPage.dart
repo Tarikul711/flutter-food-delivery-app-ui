@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/FoodOrderPage.dart';
 import 'package:flutter_app/widgets/FoodDetailsSlider.dart';
 
 class FoodDetailsPage extends StatefulWidget {
@@ -31,7 +32,10 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                   color: Color(0xFF3a3737),
                 ),
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => FoodOrderPage()),
+                  );
                 })
           ],
         ),
@@ -55,14 +59,13 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                 elevation: 1,
                 margin: EdgeInsets.all(5),
               ),
-            /*  Container(
+              /*  Container(
                 height: 150,
                 child:FoodDetailsSlider(
                     slideImage1: "assets/images/bestfood/ic_best_food_8.jpeg",
                     slideImage2: "assets/images/bestfood/ic_best_food_9.jpeg",
                     slideImage3: "assets/images/bestfood/ic_best_food_10.jpeg"),
               ),*/
-
 
               FoodTitleWidget(
                   productName: "Grilled Salmon",
@@ -284,7 +287,12 @@ class AddToCartMenu extends StatelessWidget {
             iconSize: 30,
           ),
           InkWell(
-            onTap: () => print('hello'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FoodOrderPage()),
+              );
+            },
             child: Container(
               width: 200.0,
               height: 45.0,

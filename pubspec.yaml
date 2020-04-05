@@ -50,7 +50,9 @@ flutter:
     - assets/images/menus/ic_account.png
     - assets/images/menus/ic_cart.png
     - assets/images/menus/ic_home.png
+    - assets/images/menus/ic_delete.png
     - assets/images/menus/ic_near_by.png
+    - assets/images/menus/ic_credit_card.png
     - assets/images/topmenu/ic_burger.png
     - assets/images/topmenu/ic_cake.png
     - assets/images/topmenu/ic_ice_cream.png
