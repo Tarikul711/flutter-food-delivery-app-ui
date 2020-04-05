@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/animation/RotationRoute.dart';
+import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/FoodDetailsPage.dart';
 
 class PopularFoodsWidget extends StatefulWidget {
@@ -46,10 +48,7 @@ class PopularFoodTiles extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => FoodDetailsPage()),
-        );
+        Navigator.push(context, ScaleRoute(page: FoodDetailsPage()));
       },
       child: Column(
         children: <Widget>[
@@ -332,3 +331,5 @@ class PopularFoodItems extends StatelessWidget {
     );
   }
 }
+
+

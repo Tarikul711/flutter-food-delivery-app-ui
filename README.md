@@ -1,6 +1,18 @@
-# flutter_app
+# flutter_food_delivery_app_ui
 
-A new Flutter application.
+## This application is not completed yet. currently, I am working on it. 
+A small attempt to make an Food delivery app user interface in Flutter for Android and iOS.
+
+## ScreenShots
+### Home Page
+<img src="screens/home_screen.jpg" height="500em" />
+
+### Food Details Screen
+<img src="screens/detail_screen.jpg" height="500em" />
+
+### Login & Registration Screen
+<img src="screens/add_to_cart_screen.jpg" height="500em" />
+
 
 ## Getting Started
 

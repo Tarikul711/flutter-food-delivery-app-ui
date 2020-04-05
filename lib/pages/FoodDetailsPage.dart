@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/FoodOrderPage.dart';
 import 'package:flutter_app/widgets/FoodDetailsSlider.dart';
 
@@ -32,10 +33,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                   color: Color(0xFF3a3737),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => FoodOrderPage()),
-                  );
+                  Navigator.push(context, ScaleRoute(page: FoodOrderPage()));
                 })
           ],
         ),
@@ -288,10 +286,7 @@ class AddToCartMenu extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => FoodOrderPage()),
-              );
+              Navigator.push(context, ScaleRoute(page: FoodOrderPage()));
             },
             child: Container(
               width: 200.0,
