@@ -1,4 +1,4 @@
-# flutter_food_delivery_app_ui
+# Flutter Food Delivery Application Design
 
 ## This application is not completed yet. currently, I am working on it. 
 A small attempt to make an Food delivery app user interface in Flutter for Android and iOS.
