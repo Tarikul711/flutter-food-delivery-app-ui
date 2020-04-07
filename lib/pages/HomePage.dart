@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/animation/ScaleRoute.dart';
+import 'package:flutter_app/pages/SignInPage.dart';
 import 'package:flutter_app/widgets/BestFoodWidget.dart';
 import 'package:flutter_app/widgets/BottomNavBarWidget.dart';
 import 'package:flutter_app/widgets/PopularFoodsWidget.dart';
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage> {
                 Icons.notifications_none,
                 color: Color(0xFF3a3737),
               ),
-              onPressed: () {})
+              onPressed: () {Navigator.push(context, ScaleRoute(page: SignInPage()));})
         ],
       ),
       body: SingleChildScrollView(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomNavBarWidget extends StatefulWidget {
   @override
@@ -41,7 +42,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
           ),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.account_box),
+          icon: Icon(FontAwesomeIcons.user),
           title: Text(
             'Account',
             style: TextStyle(color: Color(0xFF2c2b2b)),

@@ -24,6 +24,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   carousel_pro: ^1.0.0
+  font_awesome_flutter: 8.8.1
 
 
 dev_dependencies:
@@ -54,6 +55,9 @@ flutter:
     - assets/images/menus/ic_delete.png
     - assets/images/menus/ic_near_by.png
     - assets/images/menus/ic_credit_card.png
+    - assets/images/menus/ic_app_icon.png
+    - assets/images/menus/ic_food_express.png
+    - assets/images/menus/ic_app_icon_black.png
     - assets/images/topmenu/ic_burger.png
     - assets/images/topmenu/ic_cake.png
     - assets/images/topmenu/ic_ice_cream.png

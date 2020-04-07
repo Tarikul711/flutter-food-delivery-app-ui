@@ -11,97 +11,95 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Color(0xFFFAFAFA),
-            elevation: 0,
-            leading: IconButton(
-              icon: Icon(
-                Icons.arrow_back_ios,
-                color: Color(0xFF3a3737),
-              ),
-              onPressed: () => Navigator.of(context).pop(),
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color(0xFFFAFAFA),
+          elevation: 0,
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back_ios,
+              color: Color(0xFF3a3737),
             ),
-            title: Center(
-              child: Text(
-                "Item Carts",
-                style: TextStyle(
-                    color: Color(0xFF3a3737),
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18),
-                textAlign: TextAlign.center,
-              ),
-            ),
-            brightness: Brightness.light,
-            actions: <Widget>[
-              CartIconWithBadge(),
-            ],
+            onPressed: () => Navigator.of(context).pop(),
           ),
-          body: SingleChildScrollView(
-            child: Container(
-              padding: EdgeInsets.all(15),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.only(left: 5),
-                    child: Text(
-                      "Your Food Cart",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Color(0xFF3a3a3b),
-                          fontWeight: FontWeight.w600),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  CartItem(
-                      productName: "Grilled Salmon",
-                      productPrice: "\$96.00",
-                      productImage: "ic_popular_food_1",
-                      productCartQuantity: "2"),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  CartItem(
-                      productName: "Meat vegetable",
-                      productPrice: "\$65.08",
-                      productImage: "ic_popular_food_4",
-                      productCartQuantity: "5"),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  PromoCodeWidget(),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  TotalCalculationWidget(),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 5),
-                    child: Text(
-                      "Payment Method",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Color(0xFF3a3a3b),
-                          fontWeight: FontWeight.w600),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  PaymentMethodWidget(),
-                ],
-              ),
+          title: Center(
+            child: Text(
+              "Item Carts",
+              style: TextStyle(
+                  color: Color(0xFF3a3737),
+                  fontWeight: FontWeight.w600,
+                  fontSize: 18),
+              textAlign: TextAlign.center,
             ),
-          )),
-    );
+          ),
+          brightness: Brightness.light,
+          actions: <Widget>[
+            CartIconWithBadge(),
+          ],
+        ),
+        body: SingleChildScrollView(
+          child: Container(
+            padding: EdgeInsets.all(15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(left: 5),
+                  child: Text(
+                    "Your Food Cart",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xFF3a3a3b),
+                        fontWeight: FontWeight.w600),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                CartItem(
+                    productName: "Grilled Salmon",
+                    productPrice: "\$96.00",
+                    productImage: "ic_popular_food_1",
+                    productCartQuantity: "2"),
+                SizedBox(
+                  height: 10,
+                ),
+                CartItem(
+                    productName: "Meat vegetable",
+                    productPrice: "\$65.08",
+                    productImage: "ic_popular_food_4",
+                    productCartQuantity: "5"),
+                SizedBox(
+                  height: 10,
+                ),
+                PromoCodeWidget(),
+                SizedBox(
+                  height: 10,
+                ),
+                TotalCalculationWidget(),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 5),
+                  child: Text(
+                    "Payment Method",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xFF3a3a3b),
+                        fontWeight: FontWeight.w600),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                PaymentMethodWidget(),
+              ],
+            ),
+          ),
+        ));
   }
 }
 
