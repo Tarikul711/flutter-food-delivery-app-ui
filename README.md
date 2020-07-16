@@ -15,7 +15,6 @@ A small attempt to make an Food delivery app user interface in Flutter for Andro
 ### Login & Registration Screen
 <img src="screens/login_screen.jpg" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp; <img src="screens/signin_scren.jpg" height="500em" />
 
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
