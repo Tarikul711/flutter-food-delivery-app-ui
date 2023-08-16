@@ -1,4 +1,4 @@
-import 'package:carousel_pro/carousel_pro.dart';
+import 'package:carousel_pro_nullsafety/carousel_pro_nullsafety.dart';
 import 'package:flutter/material.dart';
 
 class FoodDetailsSlider extends StatelessWidget {
@@ -7,10 +7,10 @@ class FoodDetailsSlider extends StatelessWidget {
   String slideImage3;
 
   FoodDetailsSlider(
-      {Key key,
-      @required this.slideImage1,
-      @required this.slideImage2,
-      @required this.slideImage3})
+      {Key? key,
+      required this.slideImage1,
+      required this.slideImage2,
+      required this.slideImage3})
       : super(key: key);
 
   @override

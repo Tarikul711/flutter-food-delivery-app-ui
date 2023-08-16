@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/SignInPage.dart';
 import 'package:flutter_app/widgets/BestFoodWidget.dart';
@@ -25,7 +26,6 @@ class _HomePageState extends State<HomePage> {
               fontSize: 16,
               fontWeight: FontWeight.w500),
         ),
-        brightness: Brightness.light,
         actions: <Widget>[
           IconButton(
               icon: Icon(
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                 color: Color(0xFF3a3737),
               ),
               onPressed: () {Navigator.push(context, ScaleRoute(page: SignInPage()));})
-        ],
+        ], systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       body: SingleChildScrollView(
         child: Column(

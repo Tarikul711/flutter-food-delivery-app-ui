@@ -33,10 +33,10 @@ class TopMenuTiles extends StatelessWidget {
   String slug;
 
   TopMenuTiles(
-      {Key key,
-      @required this.name,
-      @required this.imageUrl,
-      @required this.slug})
+      {Key? key,
+      required this.name,
+      required this.imageUrl,
+      required this.slug})
       : super(key: key);
 
   @override

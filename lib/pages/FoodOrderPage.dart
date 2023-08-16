@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 
 class FoodOrderPage extends StatefulWidget {
   @override
@@ -32,10 +32,9 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
               textAlign: TextAlign.center,
             ),
           ),
-          brightness: Brightness.light,
           actions: <Widget>[
             CartIconWithBadge(),
-          ],
+          ], systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
         body: SingleChildScrollView(
           child: Container(
@@ -309,11 +308,11 @@ class CartItem extends StatelessWidget {
   String productCartQuantity;
 
   CartItem({
-    Key key,
-    @required this.productName,
-    @required this.productPrice,
-    @required this.productImage,
-    @required this.productCartQuantity,
+    Key? key,
+    required this.productName,
+    required this.productPrice,
+    required this.productImage,
+    required this.productCartQuantity,
   }) : super(key: key);
 
   @override
