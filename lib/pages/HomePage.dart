@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/SignInPage.dart';
 import 'package:flutter_app/widgets/BestFoodWidget.dart';
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
               fontSize: 16,
               fontWeight: FontWeight.w500),
         ),
-        brightness: Brightness.light,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
         actions: <Widget>[
           IconButton(
               icon: Icon(

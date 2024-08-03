@@ -28,16 +28,16 @@ class _TopMenusState extends State<TopMenus> {
 }
 
 class TopMenuTiles extends StatelessWidget {
-  String name;
-  String imageUrl;
-  String slug;
+  final String name;
+  final String imageUrl;
+  final String slug;
 
-  TopMenuTiles(
-      {Key key,
-      @required this.name,
-      @required this.imageUrl,
-      @required this.slug})
-      : super(key: key);
+  const TopMenuTiles({
+    Key? key,
+    required this.name,
+    required this.imageUrl,
+    required this.slug,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,38 +46,43 @@ class TopMenuTiles extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
-            decoration: new BoxDecoration(boxShadow: [
-              new BoxShadow(
+            padding: const EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
+            decoration: const BoxDecoration(boxShadow: [
+              BoxShadow(
                 color: Color(0xFFfae3e2),
                 blurRadius: 25.0,
                 offset: Offset(0.0, 0.75),
               ),
             ]),
             child: Card(
-                color: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(3.0),
-                  ),
+              color: Colors.white,
+              elevation: 0,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(3.0),
                 ),
-                child: Container(
-                  width: 50,
-                  height: 50,
-                  child: Center(
-                      child: Image.asset(
-                    'assets/images/topmenu/' + imageUrl + ".png",
+              ),
+              child: Container(
+                width: 50,
+                height: 50,
+                child: Center(
+                  child: Image.asset(
+                    'assets/images/topmenu/$imageUrl.png',
                     width: 24,
                     height: 24,
-                  )),
-                )),
+                  ),
+                ),
+              ),
+            ),
           ),
-          Text(name,
-              style: TextStyle(
-                  color: Color(0xFF6e6e71),
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400)),
+          Text(
+            name,
+            style: const TextStyle(
+              color: Color(0xFF6e6e71),
+              fontSize: 14,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
         ],
       ),
     );

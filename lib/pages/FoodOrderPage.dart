@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 
 class FoodOrderPage extends StatefulWidget {
   @override
@@ -32,7 +32,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
               textAlign: TextAlign.center,
             ),
           ),
-          brightness: Brightness.light,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
           actions: <Widget>[
             CartIconWithBadge(),
           ],
@@ -303,17 +303,17 @@ class PromoCodeWidget extends StatelessWidget {
 }
 
 class CartItem extends StatelessWidget {
-  String productName;
-  String productPrice;
-  String productImage;
-  String productCartQuantity;
+  final String productName;
+  final String productPrice;
+  final String productImage;
+  final String productCartQuantity;
 
   CartItem({
-    Key key,
-    @required this.productName,
-    @required this.productPrice,
-    @required this.productImage,
-    @required this.productCartQuantity,
+    Key? key,
+    required this.productName,
+    required this.productPrice,
+    required this.productImage,
+    required this.productCartQuantity,
   }) : super(key: key);
 
   @override
@@ -420,7 +420,7 @@ class CartItem extends StatelessWidget {
 }
 
 class CartIconWithBadge extends StatelessWidget {
-  int counter = 3;
+  final int counter = 3;
 
   @override
   Widget build(BuildContext context) {
@@ -463,7 +463,7 @@ class CartIconWithBadge extends StatelessWidget {
 }
 
 class AddToCartMenu extends StatelessWidget {
-  int productCounter;
+  final int productCounter;
 
   AddToCartMenu(this.productCounter);
 

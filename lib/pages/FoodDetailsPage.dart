@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/FoodOrderPage.dart';
-import 'package:flutter_app/widgets/FoodDetailsSlider.dart';
 
 class FoodDetailsPage extends StatefulWidget {
   @override
@@ -25,7 +25,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
             ),
             onPressed: () => Navigator.of(context).pop(),
           ),
-          brightness: Brightness.light,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
           actions: <Widget>[
             IconButton(
                 icon: Icon(
@@ -121,15 +121,15 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
 }
 
 class FoodTitleWidget extends StatelessWidget {
-  String productName;
-  String productPrice;
-  String productHost;
+  final String productName;
+  final String productPrice;
+  final String productHost;
 
   FoodTitleWidget({
-    Key key,
-    @required this.productName,
-    @required this.productPrice,
-    @required this.productHost,
+    Key? key,
+    required this.productName,
+    required this.productPrice,
+    required this.productHost,
   }) : super(key: key);
 
   @override
