@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasad's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Prasad's Portfolio</h1>
+      <p>Frontend Developer </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I specialize in creating pixel-perfect, responsive designs with smooth user experiences. 
+        My focus is on blending aesthetics with functionality, ensuring every interface feels intuitive and polished.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">GitHub-style Signup Page</div>
+        <div class="project">Responsive Landing Page</div>
+        <div class="project">UI Component Library</div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email:prasad@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© prasad | Built with ❤️ and clean code</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const options = { threshold: 0.2 };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
